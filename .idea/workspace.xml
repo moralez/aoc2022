@@ -5,43 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="2023 craziness">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/google_code_gson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoc2022.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day12.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day13.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day14.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentythree/Day1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentythree/Day2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentythree/Day3.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentythree/Day4.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentythree/Day5.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentythree/RetryDay5.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2023/day1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2023/day2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2023/day3-sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2023/day3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2023/day4-sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2023/day4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2023/day5-sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2023/day5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day12ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day13.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day13ex.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day13me.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day14.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/twentythree/RetryDay5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/twentythree/RetryDay5.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.7.20/kotlin-stdlib-common-1.7.20-sources.jar!/kotlin/ranges/Progressions.kt" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -88,6 +56,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last.edited.regexp": "123 red",
@@ -134,7 +103,27 @@
       <option name="presentableId" value="Default" />
       <updated>1672586506162</updated>
     </task>
+    <task id="LOCAL-00001" summary="2023 craziness">
+      <option name="closed" value="true" />
+      <created>1702440452348</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702440452348</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

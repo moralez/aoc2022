@@ -16,29 +16,44 @@ class RetryDay5 : Day("2023/day5.txt", true) {
         MapType.TemperatureToHumidity to Map(MapType.TemperatureToHumidity),
         MapType.HumidityToLocation to Map(MapType.HumidityToLocation),
     )
+    val locations = mutableListOf<Long>()
+    val conversionPatterns: MutableMap<GardenItem, Map> = mutableMapOf(
+        GardenItem.SEED to maps[MapType.SeedToSoil]!!,
+        GardenItem.SOIL to maps[MapType.SoilToFertilizer]!!,
+        GardenItem.FERTILIZER to maps[MapType.FertilizerToWater]!!,
+        GardenItem.WATER to maps[MapType.WaterToLight]!!,
+        GardenItem.LIGHT to maps[MapType.LightToTemperature]!!,
+        GardenItem.TEMPERATURE to maps[MapType.TemperatureToHumidity]!!,
+        GardenItem.HUMIDITY to maps[MapType.HumidityToLocation]!!,
+    )
+
+    private val seeds: MutableList<LongRange> = mutableListOf()
 
     override fun processInput(lines: Int?) {
         var currentMapType = MapType.SeedToSoil
         for (line in input) {
             when {
                 line.contains("seeds") -> {
-                    val seeds = processStartingRanges(line)
+                    seeds.addAll(processStartingRanges(line))
                     println("Starting Seeds: $seeds")
-                    for (seedRange in seeds) {
-                        maps[MapType.SeedToSoil]?.sourceRanges?.add(seedRange)
-                        maps[MapType.SeedToSoil]?.destinationRanges?.add(seedRange)
-                    }
                 }
                 line.contains("map") -> {
                     currentMapType = toggleMapType(line)
                 }
                 dstSrcLengthPattern.matches(line) -> {
                     val currSrcDstRange = processCurrRangeEntry(line)
+                    println("Adding to $currentMapType ${currSrcDstRange.source} ${currSrcDstRange.destination}")
                     maps[currentMapType]?.insertRange(currSrcDstRange)
+                    println("${maps[currentMapType]} ${maps[currentMapType]?.sourceRanges} ${maps[currentMapType]?.destinationRanges}")
                 }
                 else -> continue
             }
         }
+
+        for (seed in seeds) {
+            convertRange(GardenItem.SEED, GardenItem.LOCATION, seed)
+        }
+        println("Location: ${locations.size} ${locations.min()}")
     }
 
     private fun processStartingRanges(rawSeeds: String): MutableList<LongRange> {
@@ -50,22 +65,24 @@ class RetryDay5 : Day("2023/day5.txt", true) {
             .toMutableList()
     }
 
-    private fun processCurrRangeEntry(rawMap: String): Pair<LongRange, LongRange> {
+    private fun toggleMapType(rawMapType: String): MapType {
+        val mapType = MapType.fromId(rawMapType.split(" ")[0])
+        println("Changing to Map Type: $mapType")
+        return mapType
+    }
+
+    private fun processCurrRangeEntry(rawMap: String): RangePattern {
         val test = numberPattern.findAll(rawMap).map { it.value.toLong() }
         val dst = test.elementAt(0)
         val src = test.elementAt(1)
         val len = test.elementAt(2)
         val srcRange = LongRange(src, src + len - 1)
         val dstRange = LongRange(dst, dst + len - 1)
-        return Pair(srcRange, dstRange)
-    }
-
-    private fun toggleMapType(rawMapType: String): MapType {
-        return MapType.fromId(rawMapType.split(" ")[0])
+        return RangePattern(srcRange, dstRange)
     }
 
     enum class GardenItem {
-        SEED, SOIL, FERTILIZER, WATER, LIGHT, TEMPERATURE, HUMIDITY, LOCATION,
+        SEED, SOIL, FERTILIZER, WATER, LIGHT, TEMPERATURE, HUMIDITY, LOCATION
     }
 
     enum class MapType(val id: String, val srcType: GardenItem, val dstType: GardenItem) {
@@ -96,24 +113,26 @@ class RetryDay5 : Day("2023/day5.txt", true) {
         }
     }
 
+    data class RangePattern(val source: LongRange, val destination: LongRange)
+    data class ConversionPattern(
+        val sourceType: GardenItem,
+        val destinationType: GardenItem,
+        val patternRanges: List<RangePattern>,
+    )
     data class Map(val type: MapType) {
         val destinationRanges: MutableList<LongRange> = mutableListOf()
         val sourceRanges: MutableList<LongRange> = mutableListOf()
 
-        val srcDstRange: MutableList<Pair<LongRange, LongRange>> = mutableListOf()
+        val patternRanges: MutableList<RangePattern> = mutableListOf()
 
         fun absoluteMin(): Long = sourceRanges.minOf { it.first }
         fun absoluteMax(): Long = sourceRanges.minOf { it.last }
 
-        fun insertRange(otherRange: Pair<LongRange, LongRange>) {
-            val otherSrc = otherRange.first
-            val otherDst = otherRange.second
-            for (range in sourceRanges) {
-                if (range.encapsulatesRange(otherSrc)) {
-                    println("Current Range $range encapsulates $otherSrc")
-                    sourceRanges.remove(range)
-                }
-            }
+        fun insertRange(rangePattern: RangePattern) {
+            sourceRanges.add(rangePattern.source)
+            destinationRanges.add(rangePattern.destination)
+
+            patternRanges.add(rangePattern)
         }
     }
 
@@ -127,39 +146,74 @@ class RetryDay5 : Day("2023/day5.txt", true) {
         }
     }
 
+    fun convertRange(sourceType: GardenItem, targetType: GardenItem, searchRange: LongRange) {
+        println("Source Type: $sourceType, $targetType, $searchRange")
+        if (sourceType == targetType) {
+//            println("Adding to Locations: ${searchRange.first}")
+            locations.add(searchRange.first)
+            return
+        }
+
+        val conversionPattern = conversionPatterns[sourceType] ?: return
+        println("Checking conversationPattern[$sourceType] ${conversionPattern.patternRanges}")
+        val ranges = mutableListOf(searchRange)
+
+        while (ranges.isNotEmpty()) {
+            val currentRange = ranges.removeLast()
+            println("Checking Range: $currentRange")
+            var matchFound = false
+
+            for (pattern in conversionPattern.patternRanges) {
+                if (!overlap(pattern.source, currentRange)) continue
+
+                matchFound = true
+
+                // Make a range from before the overlap, if it exists
+                val overlappingMin = maxOf(pattern.source.first, currentRange.first)
+                if (overlappingMin > currentRange.first) {
+                    val valuesBefore = LongRange(currentRange.first, overlappingMin - 1)
+                    if (valuesBefore.contains(0L)) println("[BEFORE] Generated range containing 0: $valuesBefore")
+                    else println("[BEFORE] Adding to Range: $currentRange - ${pattern.source} ${pattern.destination} -> $valuesBefore")
+                    ranges.add(valuesBefore)
+                }
+
+                // Make a range from after the overlap, if it exists
+                val overlappingMax = minOf(pattern.source.last, currentRange.last)
+                if (overlappingMax < currentRange.last) {
+                    val valuesAfter = LongRange(overlappingMax+1, currentRange.last)
+                    if (valuesAfter.contains(0L)) println("[AFTER] Generated range containing 0: $valuesAfter")
+                    else println("[AFTER] Adding to Range: $currentRange - ${pattern.source} ${pattern.destination} -> $valuesAfter")
+                    ranges.add(valuesAfter)
+                }
+
+                // Now map the overlap, from source terms to destination terms
+                // pattern source 10 - 20, 30 - 40
+                val transformation = pattern.destination.first - pattern.source.first // 30 - 10 = 20
+                val destinationMin = overlappingMin + transformation
+                val destinationMax = overlappingMax + transformation
+                val newDestination = LongRange(destinationMin, destinationMax)
+                if (newDestination.contains(0L)) println("[DESTINATION] Generated range containing 0: $currentRange - ${pattern.source} ${pattern.destination} ${conversionPattern.type.dstType} $newDestination")
+                else println("[DESTINATION] Adding to Range: $currentRange - ${pattern.source} ${pattern.destination} -> $newDestination")
+                // Send converted range to next map
+                convertRange(conversionPattern.type.dstType, targetType, newDestination)
+            }
+
+            // No match was found, send unconverted range to next map
+            if (!matchFound) {
+                convertRange(conversionPattern.type.dstType, targetType, currentRange)
+            }
+        }
+    }
+
+    fun overlap(one: LongRange, two: LongRange): Boolean {
+        return one.last >= two.first && two.last >= one.first
+    }
 }
 
 fun LongRange.encapsulatesRange(other: LongRange): Boolean =
     (other.first in first..last && other.last in first.. last)
 
 fun main(args: Array<String>) {
-//    RetryDay5().processInput()
-
-    val range1 = 0L..100L
-    val range2 = 50L..75L
-
-    val result = combineAndSplitRanges(range1, range2)
-    result.forEach { println(it) }
+    RetryDay5().processInput()
 }
 
-fun combineAndSplitRanges(range1: LongRange, range2: LongRange): List<LongRange> {
-    if (range1.isEmpty() || range2.isEmpty()) {
-        return listOf(range1, range2).filterNot { it.isEmpty() }
-    }
-
-    val combinedStart = minOf(range1.first, range2.first)
-    val combinedEnd = maxOf(range1.last, range2.last)
-
-    val intersectionStart = maxOf(range1.first, range2.first)
-    val intersectionEnd = minOf(range1.last, range2.last)
-
-    return buildList {
-        if (combinedStart < intersectionStart) {
-            add(combinedStart until intersectionStart)
-        }
-        add(intersectionStart..intersectionEnd)
-        if (intersectionEnd < combinedEnd) {
-            add((intersectionEnd + 1)..combinedEnd)
-        }
-    }
-}
