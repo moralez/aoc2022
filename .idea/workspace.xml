@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="2023 craziness">
+    <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="Day 5 Part 2 SOLVED">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentythree/Day6.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2023/day6-sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2023/day6.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/twentythree/RetryDay5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/twentythree/RetryDay5.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +50,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Downloaded.Files.Path.Enabled": "false",
     "Kotlin.Day5Kt.executor": "Run",
+    "Kotlin.Day6Kt.executor": "Run",
     "Kotlin.Main.executor": "Run",
     "Kotlin.RetryDay5Kt.executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -111,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702440452348</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Day 5 Part 2 SOLVED">
+      <option name="closed" value="true" />
+      <created>1702580530369</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702580530369</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="2023 craziness" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023 craziness" />
+    <MESSAGE value="Day 5 Part 2 SOLVED" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 5 Part 2 SOLVED" />
   </component>
 </project>
