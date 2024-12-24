@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="Day 6 Part One AND Two&#10;* also includes brute force and slightly optimized">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentythree/Day7.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2023/day7-sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2023/day7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentyfour/Day1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/util/Extensions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2024/day1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,9 +20,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="Advent of Code Template" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -49,6 +50,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Downloaded.Files.Path.Enabled": "false",
+    "Kotlin.Day1Kt.executor": "Run",
     "Kotlin.Day5Kt.executor": "Run",
     "Kotlin.Day6Kt.executor": "Run",
     "Kotlin.Day7Kt.executor": "Run",
@@ -59,7 +61,9 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -90,13 +94,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-19.0.2-corretto-19.0.2-8336523bb0d9-b81783ad" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
