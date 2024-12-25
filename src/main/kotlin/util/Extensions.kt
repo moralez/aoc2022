@@ -10,3 +10,19 @@ fun <T : Comparable<T>> MutableList<T>.insertSorted(element: T) {
         this.add(index, element)
     }
 }
+
+fun <T : Comparable<T>> List<T>.isSorted(): Boolean {
+    return zipWithNext().all { (a, b) -> a <= b } || zipWithNext().all { (a, b) -> a >= b }
+}
+
+fun <T : Comparable<T>> List<T>.getSortedOrder(): SortedOrder {
+    return when {
+        zipWithNext().all { (a, b) -> a <= b } -> SortedOrder.ASCENDING
+        zipWithNext().all { (a, b) -> a >= b } -> SortedOrder.DESCENDING
+        else -> SortedOrder.NONE
+    }
+}
+
+enum class SortedOrder {
+    ASCENDING, DESCENDING, NONE
+}
