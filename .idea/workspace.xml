@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="[2025] Day 2 Parts 1">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2025/day2" afterDir="false" />
+    <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="[2025] Day 2 Part 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day2.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764824041490</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[2025] Day 2 Part 1">
+      <option name="closed" value="true" />
+      <created>1764903530761</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1764903530761</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,6 +248,7 @@
     <MESSAGE value="[2024] END" />
     <MESSAGE value="[2025] Day 1 Parts 1 and 2" />
     <MESSAGE value="[2025] Day 2 Parts 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="[2025] Day 2 Parts 1" />
+    <MESSAGE value="[2025] Day 2 Part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="[2025] Day 2 Part 1" />
   </component>
 </project>

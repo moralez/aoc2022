@@ -17,18 +17,15 @@ class Day2: Day(fileName = "2025/day2", isResource = true) {
 
         var sum = 0L
         ranges.forEach { range ->
-            for (i in range) {
-                val currString = i.toString()
-                if (currString.length % 2 != 0) {
-                    continue
-                }
-
-                val parts = currString.chunked(currString.length / 2)
-                val firstHalf = parts[0]
-                val secondHalf = parts[1]
-
-                if (firstHalf == secondHalf) {
-                    sum += i
+            for (value in range) {
+                val currValueString = value.toString()
+                for (j in 0 until currValueString.length / 2) {
+                    val replaceString = currValueString.take(j + 1)
+                    val newString = currValueString.replace(replaceString, "")
+                    if (newString.isEmpty()) {
+                        sum += value
+                        break
+                    }
                 }
             }
         }
