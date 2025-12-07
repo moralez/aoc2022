@@ -9,15 +9,11 @@ abstract class Day(
     val input: List<String>
     init {
         input = if (isResource) {
-            this::class.java
-                .classLoader
-                .getResource(fileName)?.let {
-                    it.readText().lines()
-                } ?: run {
-                    emptyList()
+            this::class.java.classLoader.getResource(fileName)?.readText()?.lines()?.filter { it.isNotEmpty() } ?: run {
+                emptyList()
             }
         } else {
-            File(fileName).readText().lines()
+            File(fileName).readText().lines().filter { it.isNotEmpty() }
         }
     }
     abstract fun processInput(lines: Int? = null)

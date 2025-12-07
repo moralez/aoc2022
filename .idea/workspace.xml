@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="[2025] Day 2 Part 1">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day3.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2025/day3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +40,12 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="69c7c3de-9d72-42de-bb59-3acfb17513e8" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/moralez/aoc2022.git",
-    "accountId": "69c7c3de-9d72-42de-bb59-3acfb17513e8"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/moralez/aoc2022.git&quot;,
+    &quot;accountId&quot;: &quot;69c7c3de-9d72-42de-bb59-3acfb17513e8&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.7.20/kotlin-stdlib-common-1.7.20-sources.jar!/kotlin/ranges/Progressions.kt" root0="SKIP_INSPECTION" />
   </component>
@@ -64,47 +66,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Kotlin.Day1Kt.executor": "Run",
-    "Kotlin.Day2Kt.executor": "Run",
-    "Kotlin.Day3Kt.executor": "Run",
-    "Kotlin.Day5Kt.executor": "Run",
-    "Kotlin.Day6Kt.executor": "Run",
-    "Kotlin.Day7Kt.executor": "Run",
-    "Kotlin.Main.executor": "Run",
-    "Kotlin.RetryDay5Kt.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last.edited.regexp": "123 red",
-    "last_opened_file_path": "C:/Users/compu/workspace/aoc2022/src/main/kotlin/twentyfive",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "terminal"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Kotlin.Day1Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Day2Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Day3Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Day5Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Day6Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Day7Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.RetryDay5Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last.edited.regexp&quot;: &quot;123 red&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/compu/workspace/aoc2022/src/main/kotlin/twentyfive&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "TEXT"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\compu\workspace\aoc2022\src\main\kotlin\twentyfive" />
@@ -112,7 +114,7 @@
       <recent name="D:\Projects\aoc2022\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day2Kt">
+  <component name="RunManager" selected="Kotlin.Day3Kt">
     <configuration name="Day1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="twentyfive.Day1Kt" />
       <module name="aoc2022" />
@@ -122,6 +124,13 @@
     </configuration>
     <configuration name="Day2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="twentyfive.Day2Kt" />
+      <module name="aoc2022" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="twentyfive.Day3Kt" />
       <module name="aoc2022" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,6 +146,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day3Kt" />
         <item itemvalue="Kotlin.Day2Kt" />
         <item itemvalue="Kotlin.Day1Kt" />
       </list>
