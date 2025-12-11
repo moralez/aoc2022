@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="[2025] Day 3 Part 1 and 2">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day4.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2025/day4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2025/day4-sample" afterDir="false" />
+    <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="[2025] Day 4 Part 1 and 2">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day5.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +113,7 @@
       <recent name="D:\Projects\aoc2022\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day4Kt">
+  <component name="RunManager" selected="Kotlin.Day5Kt">
     <configuration name="Day1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="twentyfive.Day1Kt" />
       <module name="aoc2022" />
@@ -144,6 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day5Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="twentyfive.Day5Kt" />
+      <module name="aoc2022" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="aoc2022" />
@@ -154,6 +159,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day5Kt" />
         <item itemvalue="Kotlin.Day4Kt" />
         <item itemvalue="Kotlin.Day3Kt" />
         <item itemvalue="Kotlin.Day2Kt" />
@@ -250,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765135934846</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[2025] Day 4 Part 1 and 2">
+      <option name="closed" value="true" />
+      <created>1765151234487</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1765151234487</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -277,6 +291,7 @@
     <MESSAGE value="[2025] Day 2 Parts 1" />
     <MESSAGE value="[2025] Day 2 Part 1" />
     <MESSAGE value="[2025] Day 3 Part 1 and 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="[2025] Day 3 Part 1 and 2" />
+    <MESSAGE value="[2025] Day 4 Part 1 and 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="[2025] Day 4 Part 1 and 2" />
   </component>
 </project>
