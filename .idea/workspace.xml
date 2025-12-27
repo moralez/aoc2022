@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="[2025] Day 5 Part 1">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jetbrains_kotlin_stdlib_jdk8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2025/day5-sample" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day6.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2025/day6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2025/day6-sample" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/google_code_gson.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/google_code_gson.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoc2022.iml" beforeDir="false" afterPath="$PROJECT_DIR$/aoc2022.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day5.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +31,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -41,13 +39,10 @@
     &quot;assignee&quot;: &quot;moralez&quot;
   }
 }</component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="69c7c3de-9d72-42de-bb59-3acfb17513e8" />
-  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/moralez/aoc2022.git&quot;,
-    &quot;accountId&quot;: &quot;69c7c3de-9d72-42de-bb59-3acfb17513e8&quot;
+    &quot;accountId&quot;: &quot;cfc4945e-ece7-42f4-991c-29b60c9f1bf0&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -102,10 +97,10 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last.edited.regexp&quot;: &quot;123 red&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/compu/workspace/aoc2022/src/main/kotlin/twentyfive&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
@@ -120,14 +115,7 @@
       <recent name="D:\Projects\aoc2022\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day5Kt">
-    <configuration name="Day1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="twentyfive.Day1Kt" />
-      <module name="aoc2022" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Day6Kt">
     <configuration name="Day2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="twentyfive.Day2Kt" />
       <module name="aoc2022" />
@@ -156,6 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day6Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="twentyfive.Day6Kt" />
+      <module name="aoc2022" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="aoc2022" />
@@ -166,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day6Kt" />
         <item itemvalue="Kotlin.Day5Kt" />
         <item itemvalue="Kotlin.Day4Kt" />
         <item itemvalue="Kotlin.Day3Kt" />
         <item itemvalue="Kotlin.Day2Kt" />
-        <item itemvalue="Kotlin.Day1Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765424392948</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[2025] Day 5 Part 1">
+      <option name="closed" value="true" />
+      <created>1765766141564</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1765766141564</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
