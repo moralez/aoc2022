@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="[2025] Day 5 Part 1">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day6.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2025/day6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2025/day6-sample" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+    <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="[2025] Day 6 Part 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day6.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day6.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765766141564</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="[2025] Day 6 Part 1">
+      <option name="closed" value="true" />
+      <created>1766812082301</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1766812082301</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,6 +316,7 @@
     <MESSAGE value="[2025] Day 3 Part 1 and 2" />
     <MESSAGE value="[2025] Day 4 Part 1 and 2" />
     <MESSAGE value="[2025] Day 5 Part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="[2025] Day 5 Part 1" />
+    <MESSAGE value="[2025] Day 6 Part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="[2025] Day 6 Part 1" />
   </component>
 </project>
