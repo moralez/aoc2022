@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="[2025] Day 6 Part 2">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day7.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2025/day7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2025/day7-sample" afterDir="false" />
+    <list default="true" id="2ecf6f19-4ec9-44fd-9bd8-a3b3daf7cd9c" name="Changes" comment="[2025] Day 7 Part 2&#10;* Still don't full understand this">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/objects/Node.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day7.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/twentyfive/Day7.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +24,8 @@
         <option value="Class" />
         <option value="Advent of Code Template" />
         <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="AoC Day Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -97,7 +97,7 @@
     "kotlin-language-version-configured": "true",
     "last.edited.regexp": "123 red",
     "last_opened_file_path": "C:/Users/compu/workspace/aoc2022/src/main/kotlin/twentyfive",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "fileTemplates"
@@ -298,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766895397438</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[2025] Day 7 Part 1">
+      <option name="closed" value="true" />
+      <created>1766957855909</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1766957855909</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,6 +337,8 @@
     <MESSAGE value="[2025] Day 5 Part 1" />
     <MESSAGE value="[2025] Day 6 Part 1" />
     <MESSAGE value="[2025] Day 6 Part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="[2025] Day 6 Part 2" />
+    <MESSAGE value="[2025] Day 7 Part 1" />
+    <MESSAGE value="[2025] Day 7 Part 2&#10;* Still don't full understand this" />
+    <option name="LAST_COMMIT_MESSAGE" value="[2025] Day 7 Part 2&#10;* Still don't full understand this" />
   </component>
 </project>
